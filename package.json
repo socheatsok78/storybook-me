@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run storybook -- --ci",
-    "storybook": "start-storybook -p 6006  -s ./public",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -p 6006 -s ./public",
+    "build-storybook": "build-storybook -s ./public",
+    "build-ghpages": "build-storybook -o docs -s ./public"
   },
   "keywords": [],
   "author": "",
