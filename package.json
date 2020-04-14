@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
+    "start": "npm run storybook -- --ci",
+    "storybook": "start-storybook -p 6006  -s ./public",
     "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@storybook/addon-actions": "^5.3.18",
@@ -19,6 +22,8 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/vue": "^5.3.18",
     "babel-loader": "^8.1.0",
-    "babel-preset-vue": "^2.0.2"
+    "babel-preset-vue": "^2.0.2",
+    "vue-loader": "^15.9.1",
+    "vue-template-compiler": "^2.6.11"
   }
 }
