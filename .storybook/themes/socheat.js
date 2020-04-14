@@ -7,5 +7,4 @@ export default create({
     brandImage: 'images/socheat.png',
 
     ...themes.dark
-}
-)
+})
