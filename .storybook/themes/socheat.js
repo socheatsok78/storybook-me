@@ -4,7 +4,7 @@ import { themes } from '@storybook/theming';
 export default create({
     brandTitle: 'My custom storybook',
     brandUrl: 'https://example.com',
-    brandImage: '/images/socheat.png',
+    brandImage: 'images/socheat.png',
 
     ...themes.dark
 }
